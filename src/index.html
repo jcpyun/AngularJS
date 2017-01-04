@@ -1,0 +1,36 @@
+<html ng-app="jcpapp">
+<head>
+    <title> Angular | jcp </title>
+    <!--<script src= './js/angular.min.js'></script>-->
+    <script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src= './js/app/app.module.js'></script>
+    <script src= './js/app/app.config.js'></script>
+<style>
+.old-class{
+    font-size:70px;
+    color:blueviolet;
+}
+.new-class{
+    font-size:30px;
+    color:black;
+}
+.new-class2{
+    font-size:10px;
+    color:red;
+}
+</style>
+</head>
+<body>
+    <h1 class= "old-class" ng-class=
+    "{
+        'new-class': name==='john',
+        'new-class2': name=='wow',
+      }"
+        >Hello 
+    <span ng-if='name'>{{name}}</span>
+    <span ng-if='!name'>WOW</span>!
+    </h1>
+    <input type= 'text' ng-model='name'/>
+
+</body>
+</html>
