@@ -1,3 +1,2 @@
 'use strict';
-
-angular.module('jcpapp',[]);
+angular.module('try',['blogList']);

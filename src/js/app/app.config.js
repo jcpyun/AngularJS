@@ -1,4 +1,4 @@
 'use strict';
 
-angular.module('jcpapp').
+angular.module('try').
     config(function(){});

@@ -5,10 +5,13 @@
     <script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
     <script src= './js/app/app.module.js'></script>
     <script src= './js/app/app.config.js'></script>
+
+    <script src= './js/app/blog-list/blog-list.module.js'></script>
+    <script src= './js/app/blog-list/blog-list.component.js'></script>
 <style>
 .old-class{
     font-size:70px;
-    color:blueviolet;
+    color:#aaa;
 }
 .new-class{
     font-size:30px;
@@ -21,16 +24,18 @@
 </style>
 </head>
 <body>
+    
     <h1 class= "old-class" ng-class=
     "{
         'new-class': name==='john',
-        'new-class2': name=='wow',
+        'new-class2': name=='Test',
       }"
         >Hello 
     <span ng-if='name'>{{name}}</span>
-    <span ng-if='!name'>WOW</span>!
+    <span ng-if='!name'>test angular</span>!
     </h1>
     <input type= 'text' ng-model='name'/>
-
+    <div class='' ng-controller= 'BlogListController'>
+    </div>
 </body>
 </html>
